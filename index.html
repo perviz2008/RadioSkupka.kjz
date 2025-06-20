@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Вход / Регистрация</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="form-box">
+      <div class="tab-buttons">
+        <button id="login-tab" class="active">Вход</button>
+        <button id="register-tab">Регистрация</button>
+      </div>
+
+      <form id="login-form" class="form active">
+        <input type="email" placeholder="Электронная почта" required />
+        <input type="password" placeholder="Пароль" required />
+        <div class="options">
+          <label><input type="checkbox" /> Запомнить меня</label>
+          <a href="#">Забыли пароль?</a>
+        </div>
+        <button class="btn">Войти</button>
+        <button class="btn google"><span>🔒</span> Войти через Google</button>
+      </form>
+
+      <form id="register-form" class="form">
+        <input type="text" placeholder="Имя пользователя" required />
+        <input type="email" placeholder="Электронная почта" required />
+        <input type="password" placeholder="Пароль" required />
+        <input type="password" placeholder="Повторите пароль" required />
+        <button class="btn">Зарегистрироваться</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
